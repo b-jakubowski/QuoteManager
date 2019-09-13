@@ -1,4 +1,5 @@
 {
+  "extends": "tslint-config-airbnb",
   "rulesDirectory": [
     "node_modules/@nrwl/workspace/src/tslint",
     "node_modules/codelyzer"
@@ -13,6 +14,23 @@
     "forin": true,
     "import-blacklist": [true, "rxjs/Rx"],
     "interface-over-type-literal": true,
+    "import-spacing": true,
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "max-classes-per-file": [
+      true,
+      1
+    ],
+    "max-file-line-count": [
+      true,
+      400
+    ],
+    "max-line-length": [
+      true,
+      140
+    ],
     "member-access": false,
     "member-ordering": [
       true,
@@ -47,6 +65,13 @@
     "object-literal-sort-keys": false,
     "prefer-const": true,
     "radix": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "trailing-comma": [
+      false
+    ],
     "triple-equals": [true, "allow-null-check"],
     "unified-signatures": true,
     "variable-name": false,
@@ -62,8 +87,7 @@
         ]
       }
     ],
-    "directive-selector": [true, "attribute", "app", "camelCase"],
-    "component-selector": [true, "element", "app", "kebab-case"],
+    "component-selector": [true, "element", false, "kebab-case"],
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,
@@ -75,6 +99,14 @@
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
+    "use-pipe-transform-interface": true,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
   }
 }
