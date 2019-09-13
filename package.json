@@ -29,7 +29,6 @@
   },
   "private": true,
   "dependencies": {
-    "@nrwl/angular": "8.5.0",
     "@angular/animations": "^8.2.0",
     "@angular/common": "^8.2.0",
     "@angular/compiler": "^8.2.0",
@@ -38,13 +37,15 @@
     "@angular/platform-browser": "^8.2.0",
     "@angular/platform-browser-dynamic": "^8.2.0",
     "@angular/router": "^8.2.0",
-    "core-js": "^2.5.4",
-    "rxjs": "~6.4.0",
-    "zone.js": "^0.9.1",
     "@nestjs/common": "^6.2.4",
     "@nestjs/core": "^6.2.4",
     "@nestjs/platform-express": "^6.2.4",
-    "reflect-metadata": "^0.1.12"
+    "@nrwl/angular": "8.5.0",
+    "core-js": "^2.5.4",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "~6.4.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "zone.js": "^0.9.1"
   },
   "devDependencies": {
     "@angular/cli": "8.3.3",
@@ -71,5 +72,11 @@
     "@nrwl/node": "8.5.0",
     "@nestjs/schematics": "^6.3.0",
     "@nestjs/testing": "^6.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ng lint",
+      "pre-push": "npm run test"
+    }
   }
 }
