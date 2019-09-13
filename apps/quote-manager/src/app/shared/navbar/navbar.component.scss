@@ -1,0 +1,29 @@
+:host {
+  header {
+    height: 3.5rem;
+    width: 100vw;
+    background: red;
+    display: flex;
+    .logo-icon {
+      width: 3.5rem;
+      height: 100%;
+      background: rgba(16, 51, 255, 0.5);
+    }
+    .logo, .search-container, .avatar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid blue;
+    }
+    .logo {
+      //font-size: 2em;
+      flex: 1;
+    }
+    .search-container {
+      flex: 12;
+    }
+    .avatar-container {
+      flex: 1;
+    }
+  }
+}

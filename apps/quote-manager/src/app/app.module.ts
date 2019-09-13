@@ -3,10 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
+
+const DECLARATIONS = [
+  AppComponent
+];
+
+const MODULES = [
+  BrowserModule,
+  HttpClientModule,
+  SharedModule
+];
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule],
+  declarations: DECLARATIONS,
+  imports: MODULES,
   providers: [],
   bootstrap: [AppComponent]
 })
