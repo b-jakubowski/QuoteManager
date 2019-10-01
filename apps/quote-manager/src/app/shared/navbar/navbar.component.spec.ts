@@ -22,4 +22,20 @@ describe('NavbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should show header', () => {
+    expect(fixture.nativeElement.querySelector('[data-test="header"]')).toBeTruthy();
+  });
+
+  it('should show navbar logo icon', () => {
+    expect(fixture.nativeElement.querySelector('[data-test="logo-icon"]')).toBeTruthy();
+  });
+
+  it('should show navbar search input', () => {
+    expect(fixture.nativeElement.querySelector('[data-test="search-input"]')).toBeTruthy();
+  });
+
+  it('should show navbar user avatar', () => {
+    expect(fixture.nativeElement.querySelector('[data-test="user-avatar"]')).toBeTruthy();
+  });
 });

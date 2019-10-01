@@ -1,4 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../../../node_modules/bulma/sass/utilities/initial-variables.sass';
+@import '../../../node_modules/bulma/sass/utilities/functions';
+
+$primary: #FFD500;
+$primary-invert: black;
+
 body {
   margin: 0;
 }
+
+@import '../../../node_modules/bulma/bulma.sass';

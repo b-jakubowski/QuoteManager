@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+@import '../../../styles/colors';
+
+:host {
+  width: 4rem;
+  height: calc(100vh - #{$navbar-height});
+  display: flex;
+  flex-direction: column;
+  .button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0;
+    &:hover {
+      background: $yellow;
+    }
+    span {
+      margin: 0;
+    }
+    p {
+      font-size: 0.6rem;
+      color: $grey-font;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    aside {
+      display: flex;
+    }
+    .button {
+      flex: 1;
+    }
+  }
+}
