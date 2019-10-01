@@ -1,9 +1,12 @@
 @import '../styles/colors';
 
 :host {
-  margin: 0;
-  .app-body {
+  .app-container {
+    margin: 0;
+    display: flex;
     text-align: center;
-    background: $accent-grey;
+    .content {
+      background: $accent-grey;
+    }
   }
 }
