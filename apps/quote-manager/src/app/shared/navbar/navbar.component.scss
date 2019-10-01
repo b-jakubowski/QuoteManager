@@ -1,26 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import '../../../styles/colors';
+@import '../../../styles/variables';
+
 :host {
   header {
-    height: 3.5rem;
+    height: $navbar-height;
     width: 100vw;
-    background: red;
+    max-width: 100%;
     display: flex;
     .logo-icon {
       width: 3.5rem;
       height: 100%;
-      background: rgba(16, 51, 255, 0.5);
+      background: $purple;
     }
-    .logo, .search-container, .avatar-container {
+    .logo-icon, .logo, .search-container, .avatar-container {
       display: flex;
-      justify-content: center;
       align-items: center;
-      border: 1px solid blue;
+    }
+    .logo-icon, .logo, .avatar-container {
+      justify-content: center;
     }
     .logo {
-      //font-size: 2em;
-      flex: 1;
+      flex: 3;
+      h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+      }
     }
     .search-container {
+      justify-content: flex-end;
+      padding: 0 1rem;
       flex: 12;
+      @media (max-width: 768px) {
+        flex: 8;
+      }
     }
     .avatar-container {
       flex: 1;
