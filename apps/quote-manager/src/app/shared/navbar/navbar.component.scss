@@ -9,7 +9,7 @@
     max-width: 100%;
     display: flex;
     .logo-icon {
-      width: 3.5rem;
+      width: 4rem;
       height: 100%;
       background: $purple;
     }
@@ -25,6 +25,9 @@
       h2 {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
       }
     }
     .search-container {
@@ -37,6 +40,12 @@
     }
     .avatar-container {
       flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .logo-icon {
+        display: none;
+      }
     }
   }
 }
