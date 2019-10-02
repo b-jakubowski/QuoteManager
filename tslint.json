@@ -17,8 +17,12 @@
     "import-spacing": true,
     "indent": [
       true,
-      "spaces"
-    ],
+      "tabs"
+		],
+		"ter-indent": [
+			true,
+			"tab"
+		],
     "max-classes-per-file": [
       true,
       1
