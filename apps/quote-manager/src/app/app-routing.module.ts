@@ -3,11 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { QuotesComponent } from './quotes/quotes.component';
 
 const appRoutes: Routes = [
-	{ path: '', redirectTo: 'quotes', pathMatch: 'full' },
-	{
-		path: 'quotes',
-		loadChildren: () => import('./quotes/quotes.module').then(mod => mod.QuotesModule)
-	}
+	{ path: '', redirectTo: 'quotes', pathMatch: 'full' }
 ];
 
 @NgModule({
