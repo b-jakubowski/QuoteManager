@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { QuotesComponent } from './quotes.component';
 import { EditQuoteComponent } from './edit-quote/edit-quote.component';
 import { DailyQuoteComponent } from './daily-quote/daily-quote.component';
+import { AllQuotesComponent } from './all-quotes/all-quotes.component';
+import { BooksQuotesComponent } from './books-quotes/books-quotes.component';
 
 const appRoutes: Routes = [
 	{ path: '', redirectTo: 'quotes', pathMatch: 'full' },
@@ -22,6 +24,14 @@ const appRoutes: Routes = [
 			{
 				path: 'edit',
 				component: EditQuoteComponent,
+			},
+			{
+				path: 'all',
+				component: AllQuotesComponent,
+			},
+			{
+				path: 'books',
+				component: BooksQuotesComponent,
 			}
 		]
 	}
