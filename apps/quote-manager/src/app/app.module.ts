@@ -4,21 +4,26 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { QuotesModule } from './quotes/quotes.module';
+import { AppRoutingModule } from './app-routing.module';
 
 const DECLARATIONS = [
-  AppComponent
+	AppComponent
 ];
 
 const MODULES = [
-  BrowserModule,
-  HttpClientModule,
-  SharedModule
+	BrowserModule,
+	HttpClientModule,
+	SharedModule,
+	QuotesModule,
+	AppRoutingModule
 ];
 
 @NgModule({
-  declarations: DECLARATIONS,
-  imports: MODULES,
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: DECLARATIONS,
+	imports: MODULES,
+	providers: [],
+	bootstrap: [AppComponent]
 })
+
 export class AppModule {}
