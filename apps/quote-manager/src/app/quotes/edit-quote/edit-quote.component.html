@@ -1,1 +1,48 @@
-<p>edit-quote works!</p>
+<div class="add-quote-container">
+
+	<h3 class="input-title">Book name</h3>
+	<div class="book">
+		<label class="book-name-input">
+			<input class="input" type="text" placeholder="Book name">
+		</label>
+		<label class="checkbox no-book-checkbox">
+			<input type="checkbox">
+			Don't know
+		</label>
+	</div>
+
+	<h3 class="input-title">Quote Category</h3>
+	<div class="categories-checkboxes">
+		<span class="control button" *ngFor="let category of quoteCategories">
+			<label class="is-checkbox">
+				<input [id]="category" type="checkbox">
+				<span>{{ category }}</span>
+			</label>
+		</span>
+	</div>
+
+	<div class="add-category">
+		<h4>Add category</h4>
+		<div class="add-category-field">
+			<label class="add-category-input">
+				<input class="input" type="text" placeholder="Book name">
+			</label>
+			<button class="button">
+				<span class="icon">
+					<i class="fas fa-plus"></i>
+				</span>
+			</button>
+		</div>
+	</div>
+
+	<h3 class="input-title">Add Quote</h3>
+	<div class="add-quote">
+		<textarea class="textarea" placeholder="Write your quote here" rows="5"></textarea>
+		<button class="button">
+			<span>Add</span>
+			<span class="icon">
+				<i class="fas fa-plus"></i>
+			</span>
+		</button>
+	</div>
+</div>
