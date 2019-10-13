@@ -3,6 +3,7 @@ export interface BookInterface {
 	name: string;
 	author: string;
 	cover: string | null;
+	quotes: string[];
 	startedReading: string | null;
 	endedReading: string | null;
 }
