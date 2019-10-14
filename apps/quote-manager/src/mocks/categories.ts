@@ -29,4 +29,8 @@ export const categoriesMock: QuoteCategoryInterface[] = [
 		id: '7',
 		name: 'money'
 	},
+	{
+		id: '8',
+		name: 'productivity'
+	},
 ];
