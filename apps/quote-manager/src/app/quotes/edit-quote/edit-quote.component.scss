@@ -1,0 +1,49 @@
+:host {
+	h3, h4 {
+		text-align: start;
+	}
+	.book {
+		display: flex;
+		align-items: center;
+	}
+	.book-input {
+		display: flex;
+		align-items: center;
+		flex: 3;
+		span {
+			width: 6.5rem;
+			text-align: left;
+		}
+	}
+	.no-book-checkbox {
+		flex: 1;
+	}
+
+	.categories-checkboxes {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		input {
+			margin-right: 0.5rem;
+		}
+	}
+
+	.add-category {
+		h4 {
+			margin-top: 1rem;
+		}
+		.add-category-field {
+			display: flex;
+
+			.add-category-input {
+				flex: 1;
+			}
+		}
+	}
+
+	.add-quote {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

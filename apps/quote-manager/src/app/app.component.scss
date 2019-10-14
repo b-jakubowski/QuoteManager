@@ -6,7 +6,8 @@
     display: flex;
     text-align: center;
     .content {
-      background: $accent-grey;
+			background: $accent-grey;
+			width: 100%;
     }
   }
 }
