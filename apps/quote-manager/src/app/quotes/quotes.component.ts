@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-quotes',
-  templateUrl: './quotes.component.html',
-  styleUrls: ['./quotes.component.scss']
+	selector: 'app-quotes',
+	templateUrl: './quotes.component.html',
+	styleUrls: ['./quotes.component.scss']
 })
 export class QuotesComponent {
 

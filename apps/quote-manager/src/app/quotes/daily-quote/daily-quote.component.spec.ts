@@ -8,7 +8,7 @@ describe('DailyQuoteComponent', () => {
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [ DailyQuoteComponent ]
+			declarations: [DailyQuoteComponent]
 		})
 		.compileComponents();
 	}));
