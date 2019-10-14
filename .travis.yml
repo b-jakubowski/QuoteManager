@@ -1,23 +1,23 @@
 language: node_js
 node_js:
-	- '12'
+  - '12'
 dist: trusty
 sudo: required
 branches:
-	only:
-		- master
+  only:
+    - master
 cache:
-	directories:
-		- node_modules
+  directories:
+    - node_modules
 before_script:
-	- npm install -g @angular/cli
+  - npm install -g @angular/cli
 script:
-	- ng lint
-	- ng build --prod --base-href https://b-jakubowski.github.io/QuoteManager/
+  - ng lint
+  - ng build --prod --base-href https://b-jakubowski.github.io/QuoteManager/
 deploy:
-	provider: pages
-	skip_cleanup: true
-	github_token: $GITHUB_TOKEN
-	local_dir: dist/apps/quote-manager
-	on:
-		branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/apps/quote-manager
+  on:
+    branch: master
