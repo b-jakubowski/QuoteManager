@@ -17,7 +17,7 @@ before_script:
 
 script:
   - ng lint
-  - ng build --prod
+  - ng build --prod --base-href /QuoteManager/
   - mv dist/apps/quote-manager/index.html dist/apps/quote-manager/404.html
 deploy:
   provider: pages
