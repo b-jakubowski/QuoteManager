@@ -1,6 +1,6 @@
 export interface QuoteInterface {
 	id: string;
 	categoriesIds: string[] | null;
-	bookId: string;
+	bookId?: string;
 	quote: string;
 }
