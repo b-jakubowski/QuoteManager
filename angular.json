@@ -45,6 +45,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+							"baseHref": "https://b-jakubowski.github.io/QuoteManager/",
               "budgets": [
                 {
                   "type": "initial",
