@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { QuotesModule } from './quotes/quotes.module';
+import { BooksModule } from './books/books.module';
 
 const DECLARATIONS = [
 	AppComponent
@@ -16,7 +17,8 @@ const MODULES = [
 	HttpClientModule,
 	SharedModule,
 	QuotesModule,
-	AppRoutingModule
+	AppRoutingModule,
+	BooksModule
 ];
 
 @NgModule({
