@@ -1,4 +1,4 @@
-import { QuoteCategoryInterface } from '../app/quotes/quote-category.interface';
+import { QuoteCategoryInterface } from '../../app/quotes/quote-category.interface';
 
 export const categoriesMock: QuoteCategoryInterface[] = [
 	{

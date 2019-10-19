@@ -1,4 +1,4 @@
-import { BookInterface } from '../app/books/book.interface';
+import { BookInterface } from '../../app/books/book.interface';
 
 export const booksMock: BookInterface[] = [
 	{
