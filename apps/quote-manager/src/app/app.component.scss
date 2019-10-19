@@ -9,5 +9,10 @@
 			background: $accent-grey;
 			width: 100%;
     }
+		.container {
+			max-width: 42rem;
+			margin-top: 3rem;
+			padding: 0 1rem;
+		}
   }
 }
