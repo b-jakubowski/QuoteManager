@@ -1,3 +1,5 @@
-<div class="books-quotes" *ngFor="let book of booksMock | async">
-	<app-book [book]="book"></app-book>
+<div class="columns is-multiline is-mobile">
+	<div class="books-quotes column is-one-third-tablet is-half-mobile" *ngFor="let book of booksMock | async">
+		<app-book [book]="book"></app-book>
+	</div>
 </div>
