@@ -83,4 +83,20 @@ export const booksMock: BookInterface[] = [
 		startedReading: null,
 		endedReading: null
 	},
+	{
+		id: '4',
+		name: 'The Shining',
+		author: 'Stephen King',
+		cover: 'https://upload.wikimedia.org/wikipedia/en/4/4c/Shiningnovel.jpg',
+		quotes: [
+			{
+				id: '9',
+				categoriesIds: ['5'],
+				bookId: '4',
+				quote: 'Monsters are real. Ghosts are too. They live inside of us, and sometimes, they win'
+			}
+		],
+		startedReading: null,
+		endedReading: null
+	},
 ];
