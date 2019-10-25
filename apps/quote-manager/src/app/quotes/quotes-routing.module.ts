@@ -4,9 +4,8 @@ import { QuotesComponent } from './quotes.component';
 import { EditQuoteComponent } from './edit-quote/edit-quote.component';
 import { DailyQuoteComponent } from './daily-quote/daily-quote.component';
 import { AllQuotesComponent } from './all-quotes/all-quotes.component';
-import { BooksQuotesComponent } from './books-quotes/books-quotes.component';
 
-const appRoutes: Routes = [
+const quotesRoutes: Routes = [
 	{ path: '', redirectTo: 'quotes', pathMatch: 'full' },
 	{
 		path: 'quotes',
@@ -29,16 +28,12 @@ const appRoutes: Routes = [
 				path: 'all',
 				component: AllQuotesComponent,
 			},
-			{
-				path: 'books',
-				component: BooksQuotesComponent,
-			}
 		]
 	}
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(appRoutes)],
+	imports: [RouterModule.forChild(quotesRoutes)],
 	exports: [RouterModule]
 })
 

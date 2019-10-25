@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { DailyQuoteComponent } from './daily-quote/daily-quote.component';
 import { EditQuoteComponent } from './edit-quote/edit-quote.component';
 import { AllQuotesComponent } from './all-quotes/all-quotes.component';
-import { BooksQuotesComponent } from './books-quotes/books-quotes.component';
+import { BooksQuotesComponent } from '../books/books-quotes/books-quotes.component';
 
 describe('QuotesComponent', () => {
 	let component: QuotesComponent;
