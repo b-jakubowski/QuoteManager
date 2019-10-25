@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BooksQuotesService } from './books-quotes.service';
+import { booksMock } from '../../../assets/mocks/books';
 
 @Component({
 	selector: 'app-books-quotes',
@@ -7,7 +8,7 @@ import { BooksQuotesService } from './books-quotes.service';
 	styleUrls: ['./books-quotes.component.scss']
 })
 export class BooksQuotesComponent {
-	booksMock = this.booksQuoteService.fetchBooksMock();
+	booksMock = this.booksQuoteService.fetchMockData(booksMock);
 
 	constructor(private booksQuoteService: BooksQuotesService) {}
 }
