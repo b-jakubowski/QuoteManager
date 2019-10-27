@@ -16,7 +16,6 @@ before_script:
   - npm install
 
 script:
-  - ng lint
   - ng build --prod
 deploy:
   provider: pages
