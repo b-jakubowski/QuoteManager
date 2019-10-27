@@ -1,0 +1,9 @@
+@import "../../../styles/colors";
+:host {
+	.books-quotes {
+		&:hover{
+			background-color: $light-yellow;
+			cursor: pointer;
+		}
+	}
+}

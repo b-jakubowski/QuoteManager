@@ -5,14 +5,12 @@ import { QuotesComponent } from './quotes.component';
 import { QuotesRoutingModule } from './quotes-routing.module';
 import { DailyQuoteComponent } from './daily-quote/daily-quote.component';
 import { AllQuotesComponent } from './all-quotes/all-quotes.component';
-import { BooksQuotesComponent } from './books-quotes/books-quotes.component';
 
 const DECLARATIONS = [
 	QuotesComponent,
 	EditQuoteComponent,
 	DailyQuoteComponent,
-	AllQuotesComponent,
-	BooksQuotesComponent
+	AllQuotesComponent
 ];
 
 const MODULES = [

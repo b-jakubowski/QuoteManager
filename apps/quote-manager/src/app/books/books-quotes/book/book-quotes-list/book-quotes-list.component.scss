@@ -1,0 +1,15 @@
+:host {
+	.field {
+		display: flex;
+		.control {
+			flex: 11;
+			textarea {
+				height: 3.5rem;
+			}
+		}
+		button {
+			flex: 1;
+			height: 3.5rem;
+		}
+	}
+}

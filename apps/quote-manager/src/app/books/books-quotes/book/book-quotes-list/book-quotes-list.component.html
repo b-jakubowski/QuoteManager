@@ -1,0 +1,13 @@
+<div class="field">
+	<div class="control">
+		<textarea class="textarea" placeholder="Add new quote !" rows="1"></textarea>
+	</div>
+	<button class="button">
+    <span class="icon is-small">
+      <i class="fas fa-plus"></i>
+    </span>
+	</button>
+</div>
+<div *ngFor=" let quote of quotes | async">
+	<book-quotes-list-item [quote]="quote"></book-quotes-list-item>
+</div>
