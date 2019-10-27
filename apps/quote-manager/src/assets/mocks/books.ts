@@ -1,4 +1,4 @@
-import { BookInterface } from '../app/books/book.interface';
+import { BookInterface } from '../../app/books/book.interface';
 
 export const booksMock: BookInterface[] = [
 	{
@@ -72,12 +72,21 @@ export const booksMock: BookInterface[] = [
 				quote: 'Two Core Abilities for Thriving in the New Economy 1. The ability to quickly master hard things. ' +
 					'2. The ability to produce at an elite level, in terms of both quality and speed'
 			},
+		],
+		startedReading: null,
+		endedReading: null
+	},
+	{
+		id: '4',
+		name: 'The Shining',
+		author: 'Stephen King',
+		cover: 'https://upload.wikimedia.org/wikipedia/en/4/4c/Shiningnovel.jpg',
+		quotes: [
 			{
 				id: '8',
-				categoriesIds: ['1', '5', '8'],
-				bookId: '3',
-				quote: 'Two Core Abilities for Thriving in the New Economy 1. The ability to quickly master hard things. ' +
-					'2. The ability to produce at an elite level, in terms of both quality and speed'
+				categoriesIds: ['5'],
+				bookId: '4',
+				quote: 'Monsters are real. Ghosts are too. They live inside of us, and sometimes, they win'
 			}
 		],
 		startedReading: null,
