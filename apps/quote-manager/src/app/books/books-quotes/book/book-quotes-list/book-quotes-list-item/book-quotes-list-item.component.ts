@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
-	selector: 'quote-manager-book-quotes-list-item',
+	selector: 'book-quotes-list-item',
 	templateUrl: './book-quotes-list-item.component.html',
-	styleUrls: ['./book-quotes-list-item.component.scss']
+	styleUrls: ['./book-quotes-list-item.component.scss'],
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BookQuotesListItemComponent {
-
+	@Input() quote;
 }

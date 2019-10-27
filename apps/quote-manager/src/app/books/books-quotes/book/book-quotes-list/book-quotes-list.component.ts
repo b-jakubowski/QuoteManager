@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 import { BookInterface } from '../../../book.interface';
 
 @Component({
-	selector: 'app-book-quotes-list',
+	selector: 'book-quotes-list',
 	templateUrl: './book-quotes-list.component.html',
 	styleUrls: ['./book-quotes-list.component.scss']
 })
