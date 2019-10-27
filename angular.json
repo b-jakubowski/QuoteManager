@@ -25,7 +25,9 @@
               "apps/quote-manager/src/favicon.ico",
               "apps/quote-manager/src/assets"
             ],
-            "styles": ["apps/quote-manager/src/styles.scss"],
+            "styles": [
+              "apps/quote-manager/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -45,7 +47,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-							"baseHref": "https://b-jakubowski.github.io/QuoteManager/",
+              "baseHref": "https://b-jakubowski.github.io/QuoteManager/",
               "budgets": [
                 {
                   "type": "initial",
@@ -86,7 +88,10 @@
               "apps/quote-manager/tsconfig.app.json",
               "apps/quote-manager/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/quote-manager/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/quote-manager/**"
+            ]
           }
         },
         "test": {
@@ -120,8 +125,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/quote-manager-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/quote-manager-e2e/**"]
+            "tsConfig": [
+              "apps/quote-manager-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/quote-manager-e2e/**"
+            ]
           }
         }
       }
@@ -139,7 +149,9 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": [
+              "apps/api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -168,7 +180,10 @@
               "apps/api/tsconfig.app.json",
               "apps/api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/api/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/api/**"
+            ]
           }
         },
         "test": {
@@ -193,7 +208,10 @@
               "libs/api-interfaces/tsconfig.lib.json",
               "libs/api-interfaces/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api-interfaces/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api-interfaces/**"
+            ]
           }
         },
         "test": {
@@ -216,6 +234,9 @@
     },
     "@nrwl/angular:library": {
       "unitTestRunner": "jest"
+    },
+    "@schematics/angular:component": {
+      "styleext": "scss"
     }
   },
   "defaultProject": "quote-manager"

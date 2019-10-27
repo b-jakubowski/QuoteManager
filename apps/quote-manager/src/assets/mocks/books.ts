@@ -72,13 +72,6 @@ export const booksMock: BookInterface[] = [
 				quote: 'Two Core Abilities for Thriving in the New Economy 1. The ability to quickly master hard things. ' +
 					'2. The ability to produce at an elite level, in terms of both quality and speed'
 			},
-			{
-				id: '8',
-				categoriesIds: ['1', '5', '8'],
-				bookId: '3',
-				quote: 'Two Core Abilities for Thriving in the New Economy 1. The ability to quickly master hard things. ' +
-					'2. The ability to produce at an elite level, in terms of both quality and speed'
-			}
 		],
 		startedReading: null,
 		endedReading: null
@@ -90,7 +83,7 @@ export const booksMock: BookInterface[] = [
 		cover: 'https://upload.wikimedia.org/wikipedia/en/4/4c/Shiningnovel.jpg',
 		quotes: [
 			{
-				id: '9',
+				id: '8',
 				categoriesIds: ['5'],
 				bookId: '4',
 				quote: 'Monsters are real. Ghosts are too. They live inside of us, and sometimes, they win'

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'quote-manager-books',
+	selector: 'books',
 	templateUrl: './books.component.html',
 	styleUrls: ['./books.component.css']
 })

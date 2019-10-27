@@ -1,0 +1,14 @@
+@import '../../../../../../styles/colors';
+
+:host {
+	.quote-container {
+		padding: 1rem;
+		margin-bottom: 1rem;
+		text-align: left;
+		background: $background-white;
+		border: 2px solid white;
+		&:hover {
+			border: 2px solid $grey-font;
+		}
+	}
+}

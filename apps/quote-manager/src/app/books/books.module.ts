@@ -5,12 +5,16 @@ import { BooksRoutingModule } from './books-routing.module';
 import { BooksListComponent } from './books-list/books-list.component';
 import { BooksQuotesComponent } from './books-quotes/books-quotes.component';
 import { BookComponent } from './books-quotes/book/book.component';
+import { BookQuotesListComponent } from './books-quotes/book/book-quotes-list/book-quotes-list.component';
+import { BookQuotesListItemComponent } from './books-quotes/book/book-quotes-list/book-quotes-list-item/book-quotes-list-item.component';
 
 const DECLARATIONS = [
 	BooksComponent,
 	BookComponent,
 	BooksListComponent,
-	BooksQuotesComponent
+	BooksQuotesComponent,
+	BookQuotesListComponent,
+	BookQuotesListItemComponent
 ];
 
 const MODULES = [
