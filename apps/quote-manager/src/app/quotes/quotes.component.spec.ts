@@ -3,7 +3,7 @@ import { QuotesComponent } from './quotes.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { DailyQuoteComponent } from './daily-quote/daily-quote.component';
 import { EditQuoteComponent } from './edit-quote/edit-quote.component';
-import { AllQuotesComponent } from './all-quotes/all-quotes.component';
+import { AllQuotesListComponent } from './all-quotes-list/all-quotes-list.component';
 import { BooksQuotesComponent } from '../books/books-quotes/books-quotes.component';
 
 describe('QuotesComponent', () => {
@@ -12,7 +12,7 @@ describe('QuotesComponent', () => {
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [QuotesComponent, BooksQuotesComponent, AllQuotesComponent, EditQuoteComponent],
+			declarations: [QuotesComponent, BooksQuotesComponent, AllQuotesListComponent, EditQuoteComponent],
 			imports: [
 				RouterTestingModule.withRoutes([
 					{ path: '', redirectTo: 'quotes', pathMatch: 'full' },
@@ -35,7 +35,7 @@ describe('QuotesComponent', () => {
 							},
 							{
 								path: 'all',
-								component: AllQuotesComponent,
+								component: AllQuotesListComponent,
 							},
 							{
 								path: 'books',

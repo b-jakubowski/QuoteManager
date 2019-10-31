@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AllQuotesComponent } from './all-quotes.component';
+import { AllQuotesListComponent } from './all-quotes-list.component';
 
 describe('AllQuotesComponent', () => {
-	let component: AllQuotesComponent;
-	let fixture: ComponentFixture<AllQuotesComponent>;
+	let component: AllQuotesListComponent;
+	let fixture: ComponentFixture<AllQuotesListComponent>;
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [AllQuotesComponent]
+			declarations: [AllQuotesListComponent]
 		})
 		.compileComponents();
 	}));
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(AllQuotesComponent);
+		fixture = TestBed.createComponent(AllQuotesListComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

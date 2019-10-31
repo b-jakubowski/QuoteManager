@@ -1,0 +1,12 @@
+<div class="quote-container">
+	<p>{{quote.quote}}</p>
+	<div class="quote-book-author">
+		<p class="author">{{quote.bookAuthor}} -</p>
+		<p>"{{quote.bookName}}"</p>
+	</div>
+	<div class="quote-categories">
+		<div class="category" *ngFor="let category of quote.categories">
+			<span class="tag is-info">{{category}}</span>
+		</div>
+	</div>
+</div>

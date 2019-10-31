@@ -4,13 +4,15 @@ import { EditQuoteComponent } from './edit-quote/edit-quote.component';
 import { QuotesComponent } from './quotes.component';
 import { QuotesRoutingModule } from './quotes-routing.module';
 import { DailyQuoteComponent } from './daily-quote/daily-quote.component';
-import { AllQuotesComponent } from './all-quotes/all-quotes.component';
+import { AllQuotesListComponent } from './all-quotes-list/all-quotes-list.component';
+import { AllQuotesListItemComponent } from './all-quotes-list/all-quotes-list-item/all-quotes-list-item.component';
 
 const DECLARATIONS = [
 	QuotesComponent,
 	EditQuoteComponent,
 	DailyQuoteComponent,
-	AllQuotesComponent
+	AllQuotesListComponent,
+	AllQuotesListItemComponent
 ];
 
 const MODULES = [
