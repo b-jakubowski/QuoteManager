@@ -2,21 +2,22 @@
 	<div class="card">
 		<div class="card-content">
 			<p class="title">
-				“There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+				{{randomQuoteContent | async}}
 			</p>
 			<p class="subtitle">
-				Jeff Atwood
+				{{(randomQuoteAuthor | async)}}
 			</p>
 		</div>
 		<footer class="card-footer">
 			<p class="card-footer-item">
-				<span>
-					View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+				<span class="icon">
+					<i class="fas fa-plus"></i>
 				</span>
+				<span>Add to favorites</span>
 			</p>
 			<p class="card-footer-item">
 				<span>
-					Share on <a href="#">Facebook</a>
+					Share on <a href="https://twitter.com/">Twitter</a>
 				</span>
 			</p>
 		</footer>
