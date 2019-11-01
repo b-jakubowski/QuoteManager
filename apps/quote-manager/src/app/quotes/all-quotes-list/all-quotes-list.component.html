@@ -1,0 +1,5 @@
+<div class="quotes-list">
+	<div class="quotes-list-item" *ngFor="let quote of allQuotes | async">
+		<app-all-quotes-list-item [quote]="quote"></app-all-quotes-list-item>
+	</div>
+</div>

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { QuotesComponent } from './quotes.component';
 import { EditQuoteComponent } from './edit-quote/edit-quote.component';
 import { DailyQuoteComponent } from './daily-quote/daily-quote.component';
-import { AllQuotesComponent } from './all-quotes/all-quotes.component';
+import { AllQuotesListComponent } from './all-quotes-list/all-quotes-list.component';
 
 const quotesRoutes: Routes = [
 	{ path: '', redirectTo: 'quotes', pathMatch: 'full' },
@@ -26,7 +26,7 @@ const quotesRoutes: Routes = [
 			},
 			{
 				path: 'all',
-				component: AllQuotesComponent,
+				component: AllQuotesListComponent,
 			},
 		]
 	}
