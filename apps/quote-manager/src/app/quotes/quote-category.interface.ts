@@ -1,4 +1,3 @@
 export interface QuoteCategoryInterface {
-	id: string;
-	name: string;
+	[key: number]: string;
 }

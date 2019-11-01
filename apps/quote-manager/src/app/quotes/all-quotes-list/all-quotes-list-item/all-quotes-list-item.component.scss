@@ -1,0 +1,29 @@
+@import '../../../../styles/colors';
+
+:host {
+	.quote-container {
+		padding: 1rem;
+		margin-bottom: 1rem;
+		text-align: left;
+		background: $background-white;
+		border: 2px solid white;
+		&:hover {
+			background: $background-grey;
+		}
+		.quote-book-author {
+			display: flex;
+			.author {
+				margin-right: 0.5rem;
+			}
+		}
+		.quote-categories {
+			display: flex;
+			span {
+				margin-right: 0.5rem;
+				&:hover {
+					background-color: $dark-purple;
+				}
+			}
+		}
+	}
+}
